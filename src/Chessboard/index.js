@@ -251,7 +251,8 @@ class Chessboard extends Component {
     if (!isEqual(positionFromProps, previousPositionFromProps) || undoMove) {
       this.setState({
         previousPositionFromProps: previousPositionFromProps,
-        undoMove: false
+        undoMove: false,
+        currentPosition: positionFromProps
       });
 
       // get board position for user
